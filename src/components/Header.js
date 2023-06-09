@@ -27,26 +27,82 @@ class Header extends Component {
   render() {
     if (this.props.sharedData) {
       var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+      this.titles = this.props.sharedData.titles
+        .map((x) => [x.toUpperCase(), 1500])
+        .flat();
     }
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={50} />
-    }, (props, prevProp) => true);
+    const HeaderTitleTypeAnimation = React.memo(
+      () => {
+        return (
+          <Typical className="title-styles" steps={this.titles} loop={50} />
+        );
+      },
+      (props, prevProp) => true
+    );
+
+    if (this.props.sharedData) {
+      var networks = this.props.sharedData.icons.map(function (network) {
+        if (network.name === "resume") {
+          return (
+            <span key={network.name} className="m-4">
+              <a
+                href={`${process.env.PUBLIC_URL}/${network.url}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i
+                  className={network.class}
+                  style={{ fontSize: "4rem", color: "black" }}
+                ></i>
+              </a>
+            </span>
+          );
+        }
+        if (network.name === "email") {
+          <span key={network.name} className="m-4">
+            <a href={network.url}>
+              <i
+                className={network.class}
+                style={{ fontSize: "4rem", color: "black" }}
+              ></i>
+            </a>
+          </span>;
+        }
+        return (
+          <span key={network.name} className="m-4">
+            <a href={network.url} target="_blank" rel="noreferrer">
+              <i
+                className={network.class}
+                style={{ fontSize: "4rem", color: "black" }}
+              ></i>
+            </a>
+          </span>
+        );
+      });
+    }
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <div className="row aligner" style={{height: '100%'}}>
+      <header
+        id="home"
+        style={{ height: window.innerHeight - 140, display: "block" }}
+      >
+        <div className="row aligner" style={{ height: "100%" }}>
           <div className="col-md-12">
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-              <br/>
+              <span
+                className="iconify header-icon"
+                data-icon="la:laptop-code"
+                data-inline="false"
+              ></span>
+              <br />
               <h1 className="mb-0">
                 <Typical steps={[name]} wrapper="p" />
               </h1>
               <div className="title-container">
                 <HeaderTitleTypeAnimation />
               </div>
+
               <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
@@ -87,6 +143,13 @@ class Header extends Component {
                 }
                 id="icon-switch"
               />
+
+              <div
+                className="d-flex justify-content-center"
+                style={{ marginTop: "20rem" }}
+              >
+                {networks}
+              </div>
             </div>
           </div>
         </div>

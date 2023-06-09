@@ -28,6 +28,7 @@ class Experience extends Component {
             </Badge>
           );
         });
+
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -37,26 +38,28 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={<i className={work.icon}></i>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
-              {mainTech}
-            </div>
+            <div>
+              <div style={{ textAlign: "left", marginBottom: "4px" }}>
+                {mainTech}
+              </div>
 
-            <h3
-              className="vertical-timeline-element-title"
-              style={{ textAlign: "left" }}
-            >
-              {work.title}
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              style={{ textAlign: "left" }}
-            >
-              {work.company}
-            </h4>
-            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+              <h3
+                className="vertical-timeline-element-title"
+                style={{ textAlign: "left" }}
+              >
+                {work.title}
+              </h3>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{ textAlign: "left" }}
+              >
+                {work.company}
+              </h4>
+              <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+            </div>
           </VerticalTimelineElement>
         );
       });
@@ -76,6 +79,7 @@ class Experience extends Component {
         <div className="col-md-8 mx-auto">
           <VerticalTimeline>
             {work}
+
             <VerticalTimelineElement
               iconStyle={{
                 background: "#AE944F",

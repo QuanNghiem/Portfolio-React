@@ -1,12 +1,12 @@
 {
     "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
+      "description_header": "Xin chào",
+      "description": "Tôi là Quân Nghiêm  tôi là một kỹ sư phần mềm. Với niềm đam mê về phát triển cả phía giao diện người dùng và phía máy chủ, tôi đã tích lũy được một bộ kỹ năng toàn diện cho phép tôi giải quyết các ứng dụng web phức tạp từ đầu đến cuối. Sở thích hiện tại của tôi là phát triển và xuất bản các Software Development Kit (SDKs).",
       "section_name": {
-        "about": "O mnie",
-        "projects": "Projekty",
-        "skills": "Umiejętności",
-        "experience": "Doświadczenie"
+        "about": "About Me",
+        "projects": "Dự Án",
+        "skills": "Kĩ Năng",
+        "experience": "Kinh Nghiệm"
       }
     },
     "projects": [
@@ -81,35 +81,39 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
+        "company": "Taxbit",
+        "title": "Full Stack Engineer",
+        "years": "06.2022 - 06.2023",
         "mainTech": [
-          "Angular 8/9/10"
+          "React Typescript"
         ],
+        "icon": "fab fa-react experience-icon",
         "technologies": [
           "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
+          "Typescript",
+          "AWS",
+          "Datadog",
+          "Ramda",
+          "NoSQL",
+          "CircleCi",
+          "Bitbucket"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
+        "company": "Citigroup",
+        "title": "Full Stack Engineer",
+        "years": "08.2020 - 05.2022",
         "mainTech": [
-          "Angular 7/8"
+          "Angular 11"
         ],
+        "icon": "fab fa-angular experience-icon",
         "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "Typescript",
+          "Oracle",
+          "Jenkins",
+          "Bitbucket",
+          "ExpressJS",
+          "SQL"
         ]
       }
     ]
