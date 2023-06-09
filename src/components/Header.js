@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import { Tooltip, OverlayTrigger } from "react-bootstrap";
 
 class Header extends Component {
   titles = [];
@@ -43,8 +44,9 @@ class Header extends Component {
 
     if (this.props.sharedData) {
       var networks = this.props.sharedData.icons.map(function (network) {
+        var icon;
         if (network.name === "resume") {
-          return (
+          icon = (
             <span key={network.name} className="m-4">
               <a
                 href={`${process.env.PUBLIC_URL}/${network.url}`}
@@ -58,26 +60,43 @@ class Header extends Component {
               </a>
             </span>
           );
+        } else if (network.name === "email") {
+          icon = (
+            <span key={network.name} className="m-4">
+              <a href={network.url}>
+                <i
+                  className={network.class}
+                  style={{ fontSize: "4rem", color: "black" }}
+                ></i>
+              </a>
+            </span>
+          );
+        } else {
+          icon = (
+            <span key={network.name} className="m-4">
+              <a href={network.url} target="_blank" rel="noreferrer">
+                <i
+                  className={network.class}
+                  style={{ fontSize: "4rem", color: "black" }}
+                ></i>
+              </a>
+            </span>
+          );
         }
-        if (network.name === "email") {
-          <span key={network.name} className="m-4">
-            <a href={network.url}>
-              <i
-                className={network.class}
-                style={{ fontSize: "4rem", color: "black" }}
-              ></i>
-            </a>
-          </span>;
-        }
+
         return (
-          <span key={network.name} className="m-4">
-            <a href={network.url} target="_blank" rel="noreferrer">
-              <i
-                className={network.class}
-                style={{ fontSize: "4rem", color: "black" }}
-              ></i>
-            </a>
-          </span>
+          <OverlayTrigger
+            placement="bottom"
+            overlay={(props) => (
+              <Tooltip id={`${network.name}-tooltip`} {...props}>
+                <p style={{ fontSize: "1.4rem" }}>
+                  {network.name.charAt(0).toUpperCase() + network.name.slice(1)}
+                </p>
+              </Tooltip>
+            )}
+          >
+            {icon}
+          </OverlayTrigger>
         );
       });
     }
