@@ -1,0 +1,115 @@
+{
+    "basic_info": {
+      "name": "Quan Nghiem",
+      "titles": [ "Software Engineer", "Front-end Developer", "Back-end Developer", "Digital Nomad" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/QuanNghiem",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/quannghiem",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "myProfile.jpg",
+      "icons": [
+        {
+          "name": "resume",
+          "url": "Resume.pdf",
+          "class": "fas fa-solid fa-file"
+        },
+        {
+          "name": "email",
+          "url": "mailto:quan.nghiem2904@gmail.com",
+          "class": "fas fa-solid fa-envelope"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/QuanNghiem",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/quan-nghiem-875275171/",
+          "class": "fab fa-linkedin"
+        }
+      ]
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "Angular",
+          "class": "devicon-angularjs-plain",
+          "level": "80"
+        },
+        {
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain",
+          "level": "90"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "AWS",
+          "class": "devicon-amazonwebservices-original",
+          "level": "75"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "C#",
+          "class": "devicon-csharp-plain",
+          "level": "65"
+        },
+        {
+          "name": "Oracle",
+          "class": "devicon-oracle-original",
+          "level": "60"
+        },
+        {
+          "name": "MongoDB",
+          "class": "devicon-mongodb-plain",
+          "level": "60"
+        },
+        {
+          "name": "npm",
+          "class": "devicon-npm-original-wordmark",
+          "level": "60"
+        },
+        {
+          "name": "NodeJS",
+          "class": "devicon-npm-original-wordmark",
+          "level": "60"
+        },
+        {
+          "name": "CircleCi",
+          "class": "devicon-circleci-plain",
+          "level": "60"
+        },
+        {
+          "name": "Postgresql",
+          "class": "devicon-postgresql-plain",
+          "level": "60"
+        }
+      ]
+    }
+  }

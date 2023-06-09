@@ -1,0 +1,120 @@
+{
+    "basic_info": {
+      "description_header": "Xin chào",
+      "description": "Tôi là Quân Nghiêm  tôi là một kỹ sư phần mềm. Với niềm đam mê về phát triển cả phía giao diện người dùng và phía máy chủ, tôi đã tích lũy được một bộ kỹ năng toàn diện cho phép tôi giải quyết các ứng dụng web phức tạp từ đầu đến cuối. Sở thích hiện tại của tôi là phát triển và xuất bản các Software Development Kit (SDKs).",
+      "section_name": {
+        "about": "About Me",
+        "projects": "Dự Án",
+        "skills": "Kĩ Năng",
+        "experience": "Kinh Nghiệm"
+      }
+    },
+    "projects": [
+      {
+        "title": "Animal Shelter",
+        "startDate": "2020",
+        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Photography",
+        "startDate": "2018",
+        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "3D Object Viewer",
+        "startDate": "2015",
+        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Taxbit",
+        "title": "Full Stack Engineer",
+        "years": "06.2022 - 06.2023",
+        "mainTech": [
+          "React Typescript"
+        ],
+        "icon": "fab fa-react experience-icon",
+        "technologies": [
+          "REST API",
+          "Typescript",
+          "AWS",
+          "Datadog",
+          "Ramda",
+          "NoSQL",
+          "CircleCi",
+          "Bitbucket"
+        ]
+      },
+      {
+        "company": "Citigroup",
+        "title": "Full Stack Engineer",
+        "years": "08.2020 - 05.2022",
+        "mainTech": [
+          "Angular 11"
+        ],
+        "icon": "fab fa-angular experience-icon",
+        "technologies": [
+          "Typescript",
+          "Oracle",
+          "Jenkins",
+          "Bitbucket",
+          "ExpressJS",
+          "SQL"
+        ]
+      }
+    ]
+  }
